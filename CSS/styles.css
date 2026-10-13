@@ -1,9 +1,17 @@
 
 
 /* ----------  Design  ---------- */
+
+/* Border box fix*/
+html {
+  box-sizing: border-box;
+}
+*,  *::before, 
+    *::after {
+      box-sizing: border-box;
+}
 :root {
-  --font-body: "IBM Plex Sans", Arial, sans-serif;
-  --font-heading: "IBM Plex Sans", Arial, sans-serif;
+
   
   --color-bg: #EAF4FB;        /* background*/
   --color-surface: #D6E9F8;   /* surfaces */
@@ -24,6 +32,16 @@
   --space-lg: 2rem;
   --space-xl: 4rem;
   --content-width: 46rem;
+
+  .hero {
+  /* red, green, blue */
+  background: rgb(214, 233, 248);
+}
+
+  .hero {
+  /* red, green, blue, alpha */
+  background: linear-gradient(rgba(31, 111, 178, 0.35), rgba(234, 244, 251, 0.1));
+}
 }
 
 /* ----------  Reset / base ---------- */
@@ -36,6 +54,19 @@
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 4rem; /* keeps headings clear of a sticky header */
+}
+
+.column-narrow {
+  width: 30%;
+  float: left;
+  padding-right: 3%;
+  min-height: 175px;
+}
+
+.column-wide {
+  width: 70%;
+  float: left;
+  min-height: 225px;
 }
 
 body {
@@ -59,9 +90,11 @@ h1, h2, h3 {
   margin: 0 0 var(--space-sm);
 }
 
-h1 { font-size: 2.5rem; }
-h2 { font-size: 1.5rem; }
-h3 { font-size: 1.15rem; }
+h1 {  font-size: 2.5rem; 
+      margin: 0;}      
+h2 {  font-size: 1.5rem; 
+      margin-top: 0;}
+h3 {  font-size: 1.15rem; }
 
 p { margin: 0 0 var(--space-md); }
 
@@ -85,15 +118,28 @@ a:focus-visible,
 .skip-link:focus { left: 0; z-index: 10; }
 
 /* ----------  Header and navigation ---------- */
+.content-wrap {
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 50px;
+  overflow: hidden;
+}
+
 .site-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  border-bottom: 1px solid var(--color-border);
+  background: var(--color-bg);
+}
+
+.site-header .content-wrap {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   gap: var(--space-md);
   padding: var(--space-md) var(--space-lg);
-  border-bottom: 1px solid var(--color-border);
-  background: var(--color-bg);
 }
 
 .site-logo {
@@ -103,28 +149,26 @@ a:focus-visible,
   color: var(--color-text);
 }
 
-.nav-list {
+.site-header nav {
   display: flex;
   flex-wrap: wrap;
   gap: var(--space-md);
-  list-style: none;
-  margin: 0;
-  padding: 0;
 }
 
-.nav-list a {
+.site-header nav a {
   font-family: var(--font-heading);
   text-decoration: none;
   color: var(--color-text);
 }
 
-.nav-list a:hover { color: var(--color-accent); }
+.site-header nav a:hover { color: var(--color-accent); }
+.profile-img {
+    border-radius:50%;
+}
 
 /* ---------- 6. Layout: main content ---------- */
 main {
-  max-width: var(--content-width);
-  margin: 0 auto;
-  padding: 0 var(--space-md);
+  padding: 0;
 }
 
 .section {
@@ -164,6 +208,7 @@ main {
 /* ----------  Resume  ---------- */
 .entry {
   margin-bottom: var(--space-lg);
+  overflow: hidden;
 }
 
 .entry .org { font-weight: normal; }
@@ -203,6 +248,10 @@ main {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+.contact-info a {
+  padding: 10px;
+  display: inline-block;
 }
 
 /* ----------  Footer ---------- */
