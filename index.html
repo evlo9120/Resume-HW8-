@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Evan L. Lopez | Resume</title>
+  <title>TEST | Resume</title>
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,7 +13,7 @@
   <!-- Font Awesome -->
   <script src="https://kit.fontawesome.com/69d21b58b0.js" crossorigin="anonymous"></script>
 
-  <link rel="stylesheet" href="CSS/styles.css">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
@@ -40,13 +40,13 @@
     <!-- ============ HERO ============ -->
     <section id="top" class="hero">
       <div class="content-wrap">
-      <img src="Assets/images/Cropped_profile.jpg" alt="Photo of Evan L. Lopez" class="profile-img column-narrow">
+      <img src="assets/images/Cropped_profile.jpg" alt="Photo of Evan L. Lopez" class="profile-img column-narrow">
       <div class="column-wide">
       <h1>Evan L. Lopez</h1>
       <p class="tagline">Software Engineer</p>
       <p>
-        <a class="button" href="Assets/resume.pdf" download>CV</a>
-        <a class="button button-secondary" href="#contact">Get in touch</a>
+        <a class="button" href="assets/resume.pdf" target="_blank" rel="noopener noreferrer">CV</a>
+      <a class="button button-secondary" href="#contact">Get in touch</a>
       </p>
       </div>
       </div>
@@ -60,6 +60,28 @@
   </div>
 </section>
 
+  <!-- ============ PROJECTS ============ -->
+      <section id="projects" class="section">
+        <div class="content-wrap">
+        <h2>Projects</h2>
+        <article class="entry">
+          <h3><a href="https://example.com" target="_blank" rel="noopener">Sonus.ai</a></h3>
+          <p>Developed an AI-powered chord-prediction model that enhances music composition workflow, utilizing multiple models [N-Gram / Markov / LSTM] to analyze over 666,000 user-generated songs with chord progressions. Sourced training data from Chordinomicon database.</p>
+        </article>
+        </div>
+      </section>
+
+    <!-- ============ EDUCATION ============ -->
+      <section id="education" class="section">
+        <div class="content-wrap">
+        <h2>Education</h2>
+        <article class="entry">
+          <h3>B.S. Computer Science, <span class="org">California State University, Northridge</span></h3>
+          <p class="meta">Northridge, CA &bull; 2027</p>
+          <p>Completed coursework in Advanced Data Structures, Software Engineering, Discrete Structures and Assembly & Computer Architecture.</p>
+        </article>
+        </div>
+      </section>
     <!-- ============ EXPERIENCE ============ -->
     
     <section id="experience" class="section">
@@ -73,12 +95,25 @@
       </div>
       <div class="column-wide">
         <ul>
-          <li>Utilized software systems (Epic, CareConnect) to manage a network of 10-20  patients, 18-20 nurses, and 5-6 surgeons to 1 of 12 medical bays and 1 of 6 operating rooms, in accordance with operation details including, but not limited to: operation type, anesthesia type, room vacancy, and equipment.</li>
+          <li>Coordinated real-time scheduling and dispatch of up to 20 patients and 27 clinicians across 20 operating rooms and medical bays, using Epic and CareConnect to match each case to the right room, staff, and equipment based on procedure type, anesthesia requirements, and room availability.</li>
           <li>Processed/finalized medical records in accordance with HIPAA standards, including paperwork for transplant organs from donors.</li>
-          <li>Reconfigured operating room network topology, reducing patient record processing and retrieval time by 30%.</li>
+          <li>Redesigned the operating room network layout, cutting patient record retrieval and processing time by 30% across 20 ORs and medical bays.</li>
         </ul>
       </div>
     </article>
+
+    <article class="entry">
+     <div class="column-narrow">
+       <h3>Private Security Contractor <span class="org">Self-Employed</span></h3>
+       <p class="meta">Los Angeles, California &bull; July 2016 &ndash; July 2021</p>
+     </div>
+     <div class="column-wide">
+       <ul>
+         <li>Performed continuous risk assessment across multiple international environments, prioritizing threats and allocating limited resources</li>
+         <li>Repurposed off-the-shelf IoT tracking devices to build a remote monitoring solution for an at-risk individual, replacing manual coverage with real-time location data and cutting staffing needs by 66%.</li>
+       </ul>
+     </div>
+   </article>
 
     <article class="entry">
       <div class="column-narrow">
@@ -94,33 +129,9 @@
       </div>
     </article>
 
-    <article class="entry">
-      <div class="column-narrow">
-        <h3>Expeditionary Airfield Systems Technician (MOS 0711), <span class="org">Marine Wing Support Squadron 473</span></h3>
-        <p class="meta">Miramar, California &bull; July 2010 &ndash; July 2012</p>
-      </div>
-      <div class="column-wide">
-        <ul>
-          <li>Standardized a two-man AM-2 installation procedure, doubling overall safety, while maintaining a 0% loss in productivity.</li>
-          <li>Performed preventive maintenance and troubleshooting on hydraulic, electrical, and mechanical systems critical to flight-line safety, in accordance with NATOPS standards.</li>
-        </ul>
-      </div>
-    </article>
   </div>
 </section>
     
-    <!-- ============ EDUCATION ============ -->
-    <section id="education" class="section">
-      <div class="content-wrap">
-      <h2>Education</h2>
-      <article class="entry">
-        <h3>B.S. Computer Science, <span class="org">California State University, Northridge</span></h3>
-        <p class="meta">Northridge, CA &bull; 2027</p>
-        <p>Completed coursework in Advanced Data Structures, Software Engineering, Discrete Structures and Assembly & Computer Architecture.</p>
-      </article>
-      </div>
-    </section>
-
     <!-- ============ SKILLS ============ -->
     <section id="skills" class="section">
       <div class="content-wrap">  
@@ -133,17 +144,7 @@
       </div>
     </section>
 
-    <!-- ============ PROJECTS ============ -->
-    <section id="projects" class="section">
-  <div class="content-wrap">
-    <h2>Projects</h2>
-
-    <article class="entry">
-      <h3><a href="https://example.com" target="_blank" rel="noopener">Sonus.ai</a></h3>
-      <p>Developed an AI-powered chord-prediction model that enhances music composition workflow, utilizing multiple models [N-Gram / Markov / LSTM] to analyze over 666,000 user-generated songs with chord progressions. Sourced training data from Chordinomicon database.</p>
-    </article>
-  </div>
-</section>
+    
 
     <!-- ============ CONTACT ============ -->
     <section id="contact" class="section">
@@ -172,3 +173,4 @@
   </footer>
 </body>
 </html>
+
