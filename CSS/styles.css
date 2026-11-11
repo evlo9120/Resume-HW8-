@@ -21,8 +21,8 @@ html {
   --color-border: #B5D3EA;    /* borders */
 
   /* Typography */
-  --font-body: Georgia, "Times New Roman", serif;
-  --font-heading: system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+  --font-body: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+  --font-heading: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
   --text-base: 1rem;
   --line-height: 1.6;
 
@@ -33,15 +33,10 @@ html {
   --space-xl: 4rem;
   --content-width: 46rem;
 
-  .hero {
-  /* red, green, blue */
-  background: rgb(214, 233, 248);
 }
 
-  .hero {
-  /* red, green, blue, alpha */
+.hero {
   background: linear-gradient(rgba(31, 111, 178, 0.35), rgba(234, 244, 251, 0.1));
-}
 }
 
 /* ----------  Reset / base ---------- */
